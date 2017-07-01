@@ -2,13 +2,14 @@
 # Copyright (C) YEAR ORGANIZATION
 # 
 # Translators:
-# jmontane <joan@montane.cat>, 2014
+# jmontane, 2014
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2014-10-22 17:20+0000\n"
-"Last-Translator: jmontane <joan@montane.cat>\n"
+"PO-Revision-Date: 2016-10-25 07:09+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/calibre/calibre-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 #: __init__.py:32
 msgid ""
 "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
-msgstr "Connector d'interfície d'usuari per a comprovar, en expulsar dispositius, llibres duplicats, absents o afegits."
+msgstr "Connector d'interfície d'usuari per a comprovar si hi ha llibres duplicats, absents o afegits amb l'expulsió del dispositiu."
 
 #: config.py:107
 msgid "Basic"
@@ -32,11 +33,11 @@ msgstr "Cerques"
 
 #: config.py:140
 msgid "When Ejecting a Device, Check for:"
-msgstr "En expulsar un dispositiu, comprova:"
+msgstr "En l'expulsió d'un dispositiu, comprova si hi ha:"
 
 #: config.py:154
 msgid "Reading List books to Sync"
-msgstr "S'està llegint la llista de llibres a sincronitzar"
+msgstr "S'està llegint la llista dels llibres a sincronitzar"
 
 #: config.py:155
 msgid ""
@@ -49,15 +50,15 @@ msgstr "Llibres duplicats"
 
 #: config.py:162
 msgid "Check for books that are on the device more than once."
-msgstr "Comprova els llibres que es troben al dispositiu més d'una vegada."
+msgstr "Comprova si hi ha llibres que es trobin al dispositiu més d'una vegada."
 
 #: config.py:166
 msgid "Deleted Books (not in Library)"
-msgstr "Llibres suprimits (no són a la biblioteca)"
+msgstr "Llibres suprimits (no a la biblioteca)"
 
 #: config.py:167
 msgid "Check for books on the device that are not in the current library."
-msgstr "Comprova si hi ha llibres en el dispositiu que no són a la biblioteca actual"
+msgstr "Comprova si hi ha llibres al dispositiu que no estiguin a la biblioteca actual."
 
 #: config.py:171
 msgid "Added Books (not on Device)"
@@ -71,7 +72,7 @@ msgstr "Comprova si hi ha llibres en la biblioteca actual que no són al disposi
 msgid ""
 "These controls aren't plugin settings as such, but convenience buttons for "
 "setting Keyboard shortcuts and viewing all plugins settings."
-msgstr "Aquests control no són paràmetres del connector pròpiament dits. Són botons per a establir dreceres de teclat i visualització de la configuració de tots els connectors."
+msgstr "Aquests controls no són cap ajust del connector pròpiament dit. Són botons per a establir dreceres de teclat i visualització de la configuració de tots els connectors."
 
 #: config.py:185
 msgid "Keyboard shortcuts..."
@@ -95,15 +96,15 @@ msgstr "Fet"
 
 #: config.py:205
 msgid "Confirmation dialogs have all been reset"
-msgstr "Els quadres de diàleg s'han restaurat al valor predeterminat."
+msgstr "S'han restaurat tots els diàlegs de confirmació"
 
 #: config.py:219
 msgid "Searches to use for:"
-msgstr "Cerques a usar per a:"
+msgstr "Cerques a utilitzar en:"
 
 #: config.py:234
 msgid "Search for Duplicated Books:"
-msgstr "Cerca per a llibres duplicats:"
+msgstr "Cerca si hi ha llibres duplicats:"
 
 #: config.py:238 config.py:245 config.py:252
 msgid "Default is %s"
@@ -111,11 +112,11 @@ msgstr "Per defecte és %s"
 
 #: config.py:241
 msgid "Deleted Books (not in Library):"
-msgstr "Llibres suprimits (no són a la biblioteca)"
+msgstr "Llibres suprimits (no a la biblioteca):"
 
 #: config.py:248
 msgid "Added Books (not on Device):"
-msgstr "Llibres afegits (no són al dispositius)"
+msgstr "Llibres afegits (no al dispositiu):"
 
 #: config.py:258
 msgid "Restore Defaults"
@@ -135,12 +136,12 @@ msgstr "Comprova si hi ha llibres duplicats, suprimits o afegits abans de l'expu
 
 #: smarteject_plugin.py:88
 msgid "Sync Reading List?"
-msgstr "Voleu sincronitzar la llista?"
+msgstr "Voleu sincronitzar la llista de les lectures?"
 
 #: smarteject_plugin.py:88
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
-msgstr "Segons la llista de lectura, hi ha llibres que cal sincronitzar<p>Voleu sincronitzar-los?"
+msgstr "Segons la llista de les lectures, hi ha llibres que cal sincronitzar<p>Voleu sincronitzar-los?"
 
 #: smarteject_plugin.py:95
 msgid "Duplicates on Device"
@@ -148,24 +149,24 @@ msgstr "Duplicats al dispositiu"
 
 #: smarteject_plugin.py:95
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
-msgstr "Hi ha llibres duplicats en el dispositiu.<p>Voleu suprimir-ne els duplicats?"
+msgstr "Hi ha llibres duplicats al dispositiu.<p>Voleu que es mostrin els duplicats?"
 
 #: smarteject_plugin.py:116
 msgid "Books in Library not on Device"
-msgstr "Llibres en la biblioteca però no al dispositiu"
+msgstr "Llibres a la biblioteca però no al dispositiu"
 
 #: smarteject_plugin.py:117
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
-msgstr "Hi ha llibres en la biblioteca que no són al dispositiu.<p>Vols mostrar els llibres que no són al dispositiu?"
+msgstr "Hi ha llibres a la biblioteca que no estan al dispositiu.<p>Voleu que es mostrin els llibres que no estan al dispositiu?"
 
 #: smarteject_plugin.py:140
 msgid "Books on Device not in Library"
-msgstr "Llibres en el dispositiu però no en la biblioteca"
+msgstr "Llibres al dispositiu però no a la biblioteca"
 
 #: smarteject_plugin.py:140
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"
-msgstr "Hi ha llibres en el dispositiu a %s que no són en la biblioteca.<p>Voleu mostrar els llibres que no són a la biblioteca?"
+msgstr "Hi ha llibres al dispositiu %s que no estan a la biblioteca.<p>Voleu que es mostrin els llibres que no estan a la biblioteca?"

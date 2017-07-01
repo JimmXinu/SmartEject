@@ -2,173 +2,172 @@
 # Copyright (C) YEAR ORGANIZATION
 # 
 # Translators:
-# tarakbumba <tarakbumba@gmail.com>, 2015
-# Çağla Turhan, 2016
-# Emre Deniz, 2014
-# mahmut özcan <faradundamarti@yandex.com>, 2016
+# Adam Humienny <adam.humienny@gmail.com>, 2015
+# konrad … <konrad.krulikowski@gmail.com>, 2016
+# Piotr Strębski <strebski@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2016-05-17 12:05+0000\n"
-"Last-Translator: Çağla Turhan\n"
-"Language-Team: Turkish (http://www.transifex.com/calibre/calibre-plugins/language/tr/)\n"
+"PO-Revision-Date: 2016-07-12 07:39+0000\n"
+"Last-Translator: konrad … <konrad.krulikowski@gmail.com>\n"
+"Language-Team: Polish (http://www.transifex.com/calibre/calibre-plugins/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: tr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: __init__.py:32
 msgid ""
 "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
-msgstr "Aygıtlar çıkarılırken Çoğaltılmış/Eksik/Eklenen Kitapları Denetlemek için grafiksel eklenti"
+msgstr "Wtyczka IU do sprawdzania powielonych/brakujących/dodanych książek podczas wyjmowania urządzeń."
 
 #: config.py:107
 msgid "Basic"
-msgstr "Temel"
+msgstr "Podstawowe"
 
 #: config.py:110
 msgid "Searches"
-msgstr "Aramalar"
+msgstr "Wyszukiwania"
 
 #: config.py:140
 msgid "When Ejecting a Device, Check for:"
-msgstr "Bir Aygıt Çıkartılırken Şunları Denetle:"
+msgstr "Podczas wyjmowania urządzenia sprawdzaj:"
 
 #: config.py:154
 msgid "Reading List books to Sync"
-msgstr "Okuma Listesi kitaplarını senkronize et"
+msgstr "Lista czytanych książek do synchronizacji"
 
 #: config.py:155
 msgid ""
 "Check Reading List plugin for books ready to Sync to the current device."
-msgstr "Mevcut aygıta senkronize edilmeye hazır kitapların Okuma Listesi eklentisini kontrol et."
+msgstr "Sprawdź książki gotowe do synchronizacji z bieżącym urządzeniem za pomocą wtyczki listy czytanych."
 
 #: config.py:161
 msgid "Duplicated Books"
-msgstr "Tekrarlanmış Kitaplar"
+msgstr "Powielone książki"
 
 #: config.py:162
 msgid "Check for books that are on the device more than once."
-msgstr "Aygıtta birden fazla bulunan kitapları kontrol et."
+msgstr "Sprawdź książki, które występują na urządzeniu więcej niż raz"
 
 #: config.py:166
 msgid "Deleted Books (not in Library)"
-msgstr "Silinmiş Kitaplar (Kitaplıkta yok)"
+msgstr "Usunięte książki (nieobecne w bibliotece)"
 
 #: config.py:167
 msgid "Check for books on the device that are not in the current library."
-msgstr "Aygıtta mevcut kitaplıkta bulunmayan kitapları kontrol et."
+msgstr "Sprawdź książki na urządzeniu, których nie ma w bieżącej bibliotece."
 
 #: config.py:171
 msgid "Added Books (not on Device)"
-msgstr "Eklenmiş Kitaplar (aygıtta yok)"
+msgstr "Dodane książki (nieobecne na urządzeniu)"
 
 #: config.py:172
 msgid "Check for books in the current library that are not on the device."
-msgstr "Mevcut kitaplıkta aygıtta bulunmayan kitapları kontrol et."
+msgstr "Sprawdź książki w bieżącej bibliotece, których nie ma na urządzeniu."
 
 #: config.py:180
 msgid ""
 "These controls aren't plugin settings as such, but convenience buttons for "
 "setting Keyboard shortcuts and viewing all plugins settings."
-msgstr "Bu kontroller eklenti ayarları değil fakat Klavye kısayollarını ayarlamak ve tüm eklenti ayarlarını görüntülemek için kolaylık sağlayan düğmelerdir."
+msgstr "Te kontrolki nie są włąściwie ustawieniami wtyczki, ale przyciskami udogadniającymi ustawianie skrótów klawiszowych i podgląd ustawień wszystkich wtyczek."
 
 #: config.py:185
 msgid "Keyboard shortcuts..."
-msgstr "Klavye kısayolları..."
+msgstr "Skróty klawiszowe…"
 
 #: config.py:186
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Bu eklenti ile ilişkilendirilen klavye kısayollarını düzenle"
+msgstr "Edytuj skróty klawiszowe związane z tą wtyczką"
 
 #: config.py:190
 msgid "&View library preferences..."
-msgstr "&Kütüphane tercihleri görünümü..."
+msgstr "&Podgląd preferencji biblioteki…"
 
 #: config.py:191
 msgid "View data stored in the library database for this plugin"
-msgstr "Bu eklenti için kitaplık veri tabanına kayıtlı verileri görüntüle"
+msgstr "Zobacz dane tej wtyczki przechowywane w bazie danych biblioteki"
 
 #: config.py:204
 msgid "Done"
-msgstr "Tamam"
+msgstr "Gotowe"
 
 #: config.py:205
 msgid "Confirmation dialogs have all been reset"
-msgstr "Onaylama diyaloglarının tümü sıfırlandı"
+msgstr "Wszystkie potwierdzenia zostały przywrócone"
 
 #: config.py:219
 msgid "Searches to use for:"
-msgstr "Kullanılan aramalar:"
+msgstr "Wyszukiwania do użycia:"
 
 #: config.py:234
 msgid "Search for Duplicated Books:"
-msgstr "Tekrarlanmış kitapları ara"
+msgstr "Szukaj powielonych książek:"
 
 #: config.py:238 config.py:245 config.py:252
 msgid "Default is %s"
-msgstr "Varsayılan %s"
+msgstr "Domyślnie: %s"
 
 #: config.py:241
 msgid "Deleted Books (not in Library):"
-msgstr "Silinmiş Kitaplar (Kitaplıkta yok)"
+msgstr "Usunięte książki (nieobecne w bibliotece)"
 
 #: config.py:248
 msgid "Added Books (not on Device):"
-msgstr "Eklenmiş Kitaplar (aygıtta yok)"
+msgstr "Dodane książki (nie na urządzeniu):"
 
 #: config.py:258
 msgid "Restore Defaults"
-msgstr "Öntanımlılara geri dön"
+msgstr "Odtwórz domyślne"
 
 #: config.py:259
 msgid "Revert all searches to the defaults."
-msgstr "Tüm aramaları varsayılana çevir."
+msgstr "Wycofaj wszystkie zmiany wyszukiwań do domyślnych"
 
 #: smarteject_plugin.py:36 smarteject_plugin.py:69
 msgid "SmartEject"
-msgstr "AkıllıÇıkarma"
+msgstr "Zmyślne wyjmowanie"
 
 #: smarteject_plugin.py:37
 msgid "Check for duplicated/deleted/added books before ejecting."
-msgstr "Çıkarmadan önce tekrarlanmış/silinmiş/eklenmiş kitapları kontrol et"
+msgstr "Sprawdzaj powielone/usunięte/dodane książki przed wyjęciem."
 
 #: smarteject_plugin.py:88
 msgid "Sync Reading List?"
-msgstr "Okuma Listesini senkronize etsin mi?"
+msgstr "Zsynchronizować listę czytanych?"
 
 #: smarteject_plugin.py:88
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
-msgstr "Okuma Listesine göre senkronize edilmesi gereken kitaplar var. <p> Kitaplar senkronize edilsin mi?"
+msgstr "Na liście czytanych znajdują się książki wymagające synchronizacji.<pChcesz je synchronizować?"
 
 #: smarteject_plugin.py:95
 msgid "Duplicates on Device"
-msgstr "Aygıtta yinelemeler bulunuyor"
+msgstr "Powielenia na urządzeniu"
 
 #: smarteject_plugin.py:95
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
-msgstr "Aygıtta yinelenmiş ekitaplar var. <p> Yinelenenleri göstersin mi?"
+msgstr "Na urządzeniu znajdują się powielone książki.<p>Chcesz je wyświetlić?"
 
 #: smarteject_plugin.py:116
 msgid "Books in Library not on Device"
-msgstr "Aygıtta değil Kitaplıktaki bulunan kitaplar."
+msgstr "Książki w bibliotece nieobecne na urządzeniu"
 
 #: smarteject_plugin.py:117
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
-msgstr "Kitaplıkta Aygıtta bulunmayan kitaplar var. <p> Aygıtta bulunmayan kitapları göstersin mi?"
+msgstr "W bibliotece znajdują się książki, które są nieobecne na urządzeniu.<p>Chcesz je wyświetlić?"
 
 #: smarteject_plugin.py:140
 msgid "Books on Device not in Library"
-msgstr "Kitaplıkta değil Aygıtta bulunan kitaplar"
+msgstr "Książki na urządzeniu nieobecne w bibliotece"
 
 #: smarteject_plugin.py:140
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"
-msgstr "Aygıtta Kitaplıkta bulunmayan %s kitaplar var.<p>Kitaplıkta bulunmayan kitapları göstersin mi?"
+msgstr "Na urządzeniu w „%s” znajdują się książki, które są nieobecne na w bibliotece.<p>Chcesz je wyświetlić?"

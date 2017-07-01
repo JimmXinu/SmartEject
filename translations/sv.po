@@ -2,13 +2,14 @@
 # Copyright (C) YEAR ORGANIZATION
 # 
 # Translators:
+# Mars Northman <marsnorthman@gmail.com>, 2017
 # Merarom <merarom@yahoo.es>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2016-01-03 15:45+0000\n"
-"Last-Translator: Merarom <merarom@yahoo.es>\n"
+"PO-Revision-Date: 2017-02-06 19:20+0000\n"
+"Last-Translator: Mars Northman <marsnorthman@gmail.com>\n"
 "Language-Team: Swedish (http://www.transifex.com/calibre/calibre-plugins/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 #: __init__.py:32
 msgid ""
 "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
-msgstr "Användargränssnittprogram för att undersöka duplikat/saknade/tillagda böcker när enhet kopplas bort."
+msgstr "Plugin avsett för att söka och jämföra bibliotek efter dubbletter, borttagningar och tillagda böcker vid utmatning av enheter."
 
 #: config.py:107
 msgid "Basic"
@@ -32,11 +33,11 @@ msgstr "Sökningar"
 
 #: config.py:140
 msgid "When Ejecting a Device, Check for:"
-msgstr "När enhets kopplas bort, undersök:"
+msgstr "När enheter kopplas bort, genomsök efter:"
 
 #: config.py:154
 msgid "Reading List books to Sync"
-msgstr "Läser lista av böcker att synkroniseras"
+msgstr "Lista med böcker att synca för läsning."
 
 #: config.py:155
 msgid ""
