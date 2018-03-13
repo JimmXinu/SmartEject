@@ -3,12 +3,12 @@
 # 
 # Translators:
 # jmontane, 2014
-# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016-2017
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2016-10-25 07:09+0000\n"
+"PO-Revision-Date: 2017-09-20 06:01+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (http://www.transifex.com/calibre/calibre-plugins/language/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -42,7 +42,7 @@ msgstr "S'està llegint la llista dels llibres a sincronitzar"
 #: config.py:155
 msgid ""
 "Check Reading List plugin for books ready to Sync to the current device."
-msgstr ""
+msgstr "Connector per a la comprovació de la llista de lectura per als llibres preparats per sincronitzar amb el dispositiu actual."
 
 #: config.py:161
 msgid "Duplicated Books"
@@ -62,7 +62,7 @@ msgstr "Comprova si hi ha llibres al dispositiu que no estiguin a la biblioteca 
 
 #: config.py:171
 msgid "Added Books (not on Device)"
-msgstr "Llibres afegits (no són al dispositiu)"
+msgstr "Llibres afegits (no al dispositiu)"
 
 #: config.py:172
 msgid "Check for books in the current library that are not on the device."
@@ -124,7 +124,7 @@ msgstr "Restaura els valors predeterminats"
 
 #: config.py:259
 msgid "Revert all searches to the defaults."
-msgstr "Estableix totes les cerques als valors predeterminats."
+msgstr "Reverteix totes les cerques als valors predeterminats."
 
 #: smarteject_plugin.py:36 smarteject_plugin.py:69
 msgid "SmartEject"
