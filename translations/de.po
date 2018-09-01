@@ -2,7 +2,7 @@
 # Copyright (C) YEAR ORGANIZATION
 # 
 # Translators:
-# Armin Geller <armingeller@t-online.de>, 2014
+# Armin Geller <armin.geller@t-online.de>, 2014
 # ILB, 2014
 # Max Vogl <mail@max-vogl.de>, 2014
 # Simon_Schuette <simonschuette@arcor.de>, 2015
