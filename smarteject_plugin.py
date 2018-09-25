@@ -75,6 +75,9 @@ class SmartEjectPlugin(InterfaceAction):
         self.qaction.triggered.connect(self.plugin_button)
 
     def plugin_button(self):
+        if not self.gui.device_manager.is_device_present:
+            # no device connected, silently skip.
+            return
 
         if 'Reading List' in self.gui.iactions and prefs['checkreadinglistsync']:
             rl_plugin = self.gui.iactions['Reading List']
