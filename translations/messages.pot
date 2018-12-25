@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-12-23 15:02+Central Standard Time\n"
+"POT-Creation-Date: 2018-12-25 08:54+Central Standard Time\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,107 +19,103 @@ msgstr ""
 msgid "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
 msgstr ""
 
-#: config.py:34
-msgid "Translation"
-msgstr ""
-
-#: config.py:109
+#: config.py:107
 msgid "Basic"
 msgstr ""
 
-#: config.py:112
+#: config.py:110
 msgid "Searches"
 msgstr ""
 
-#: config.py:142
+#: config.py:140
 msgid "When Ejecting a Device, Check for:"
 msgstr ""
 
-#: config.py:156
+#: config.py:154
 msgid "Reading List books to Sync"
 msgstr ""
 
-#: config.py:157
+#: config.py:155
 msgid "Check Reading List plugin for books ready to Sync to the current device."
 msgstr ""
 
-#: config.py:163
+#: config.py:161
 msgid "Duplicated Books"
 msgstr ""
 
-#: config.py:164
+#: config.py:162
 msgid "Check for books that are on the device more than once."
 msgstr ""
 
-#: config.py:168
+#: config.py:166
 msgid "Deleted Books (not in Library)"
 msgstr ""
 
-#: config.py:169
+#: config.py:167
 msgid "Check for books on the device that are not in the current library."
 msgstr ""
 
-#: config.py:173
+#: config.py:171
 msgid "Added Books (not on Device)"
 msgstr ""
 
-#: config.py:174
+#: config.py:172
 msgid "Check for books in the current library that are not on the device."
 msgstr ""
 
-#: config.py:182
+#: config.py:180
 msgid "These controls aren't plugin settings as such, but convenience buttons for setting Keyboard shortcuts and viewing all plugins settings."
 msgstr ""
 
-#: config.py:187
+#: config.py:185
 msgid "Keyboard shortcuts..."
 msgstr ""
 
-#: config.py:188
+#: config.py:186
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:192
+#: config.py:190
 msgid "&View library preferences..."
 msgstr ""
 
-#: config.py:193
+#: config.py:191
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:206
+#: config.py:204
 msgid "Done"
 msgstr ""
 
-#: config.py:207
+#: config.py:205
 msgid "Confirmation dialogs have all been reset"
 msgstr ""
 
-#: config.py:221
+#: config.py:219
 msgid "Searches to use for:"
 msgstr ""
 
-#: config.py:236
+#: config.py:234
 msgid "Search for Duplicated Books:"
 msgstr ""
 
-#: config.py:240 config.py:247 config.py:254
+#: config.py:238 config.py:245 config.py:252
 msgid "Default is %s"
 msgstr ""
 
-#: config.py:243
+#: config.py:241
 msgid "Deleted Books (not in Library):"
 msgstr ""
 
-#: config.py:250
+#: config.py:248
 msgid "Added Books (not on Device):"
 msgstr ""
 
-#: config.py:260
+#: config.py:258
 msgid "Restore Defaults"
 msgstr ""
 
-#: config.py:261
+#: config.py:259
 msgid "Revert all searches to the defaults."
 msgstr ""
 
