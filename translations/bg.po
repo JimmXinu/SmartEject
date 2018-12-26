@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2017-09-20 06:01+0000\n"
-"Last-Translator: Ognyan Kolev <reklamisti@yahoo.com>\n"
+"POT-Creation-Date: 2018-12-25 08:54+Central Standard Time\n"
+"PO-Revision-Date: 2018-12-25 15:58+0000\n"
+"Last-Translator: Kovid Goyal <kovid@kovidgoyal.net>\n"
 "Language-Team: Bulgarian (http://www.transifex.com/calibre/calibre-plugins/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,38 +134,38 @@ msgstr "УмноИзключване"
 msgid "Check for duplicated/deleted/added books before ejecting."
 msgstr "Проверете за дубликати/изтрити/добавени книги преди  изключване."
 
-#: smarteject_plugin.py:88
+#: smarteject_plugin.py:91
 msgid "Sync Reading List?"
 msgstr "Да се синхронизира ли списъка за четене?"
 
-#: smarteject_plugin.py:88
+#: smarteject_plugin.py:91
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
 msgstr "Има книги, които е необходимо да се синхронизират според листа за четене.  <p> Да се синхронизират ли книгите?"
 
-#: smarteject_plugin.py:95
+#: smarteject_plugin.py:98
 msgid "Duplicates on Device"
 msgstr "Дублиране на устройството"
 
-#: smarteject_plugin.py:95
+#: smarteject_plugin.py:98
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
 msgstr "Има дублиращи се книги на устройството.<p> Да се покажат ли дубликатите?"
 
-#: smarteject_plugin.py:116
+#: smarteject_plugin.py:119
 msgid "Books in Library not on Device"
 msgstr "Книги в библиотеката, които не са на устройството"
 
-#: smarteject_plugin.py:117
+#: smarteject_plugin.py:120
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
 msgstr "Има книги в библиотеката, които не са на устройствойството. Да се покажат ли книгите, които не са на устройството?"
 
-#: smarteject_plugin.py:140
+#: smarteject_plugin.py:143
 msgid "Books on Device not in Library"
 msgstr "Книги в устройството извън Библиотеката"
 
-#: smarteject_plugin.py:140
+#: smarteject_plugin.py:143
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"

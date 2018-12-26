@@ -8,9 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2017-09-20 06:01+0000\n"
-"Last-Translator: Yuanzhong Xia <imewx@qq.com>\n"
+"POT-Creation-Date: 2018-12-25 08:54+Central Standard Time\n"
+"PO-Revision-Date: 2018-12-25 15:58+0000\n"
+"Last-Translator: Kovid Goyal <kovid@kovidgoyal.net>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/calibre/calibre-plugins/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -135,38 +135,38 @@ msgstr ""
 msgid "Check for duplicated/deleted/added books before ejecting."
 msgstr ""
 
-#: smarteject_plugin.py:88
+#: smarteject_plugin.py:91
 msgid "Sync Reading List?"
 msgstr "是否同步阅读列表？"
 
-#: smarteject_plugin.py:88
+#: smarteject_plugin.py:91
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
 msgstr ""
 
-#: smarteject_plugin.py:95
+#: smarteject_plugin.py:98
 msgid "Duplicates on Device"
 msgstr "设备中的重复书籍"
 
-#: smarteject_plugin.py:95
+#: smarteject_plugin.py:98
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
 msgstr ""
 
-#: smarteject_plugin.py:116
+#: smarteject_plugin.py:119
 msgid "Books in Library not on Device"
 msgstr "只存在书库内的书籍"
 
-#: smarteject_plugin.py:117
+#: smarteject_plugin.py:120
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
 msgstr ""
 
-#: smarteject_plugin.py:140
+#: smarteject_plugin.py:143
 msgid "Books on Device not in Library"
 msgstr "只存于设备上的书籍"
 
-#: smarteject_plugin.py:140
+#: smarteject_plugin.py:143
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"

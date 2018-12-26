@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2014-12-27 13:16+Central Standard Time\n"
-"PO-Revision-Date: 2017-09-20 06:01+0000\n"
-"Last-Translator: Mars Northman <marsnorthman@gmail.com>\n"
+"POT-Creation-Date: 2018-12-25 08:54+Central Standard Time\n"
+"PO-Revision-Date: 2018-12-25 15:58+0000\n"
+"Last-Translator: Kovid Goyal <kovid@kovidgoyal.net>\n"
 "Language-Team: Swedish (http://www.transifex.com/calibre/calibre-plugins/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,38 +134,38 @@ msgstr "Smart borttagning"
 msgid "Check for duplicated/deleted/added books before ejecting."
 msgstr "Sök efter duplikat/borttagna/tillagda böcker före borttagning."
 
-#: smarteject_plugin.py:88
+#: smarteject_plugin.py:91
 msgid "Sync Reading List?"
 msgstr "Synkronisera läslista?"
 
-#: smarteject_plugin.py:88
+#: smarteject_plugin.py:91
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
 msgstr "Det finns böcker som behöver synkroniseras enligt läslista. <p>Synkronisera böcker?"
 
-#: smarteject_plugin.py:95
+#: smarteject_plugin.py:98
 msgid "Duplicates on Device"
 msgstr "Duplikat på enhet"
 
-#: smarteject_plugin.py:95
+#: smarteject_plugin.py:98
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
 msgstr "Det finns duplicerade e-böcker på enheten. <p>Visa duplikat?"
 
-#: smarteject_plugin.py:116
+#: smarteject_plugin.py:119
 msgid "Books in Library not on Device"
 msgstr "Böcker i bibliotek inte på enhet"
 
-#: smarteject_plugin.py:117
+#: smarteject_plugin.py:120
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
 msgstr "Det finns böcker i biblioteket som inte finns på enheten.<p>Visa böcker som inte finns på enhet?"
 
-#: smarteject_plugin.py:140
+#: smarteject_plugin.py:143
 msgid "Books on Device not in Library"
 msgstr "Böcker på enhet inte i bibliotek"
 
-#: smarteject_plugin.py:140
+#: smarteject_plugin.py:143
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"
