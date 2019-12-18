@@ -3,6 +3,7 @@
 # 
 # Translators:
 # Marius K <matriko@hotmail.com>, 2016
+# Meteor0id, 2019
 # Rodolfo_Jadon, 2014
 # Volluta <volluta@tutanota.com>, 2015
 # W.P.M.E. Hofland <wpme.hofland@gmail.com>, 2015
@@ -10,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2018-12-25 08:54+Central Standard Time\n"
-"PO-Revision-Date: 2018-12-25 15:58+0000\n"
-"Last-Translator: Kovid Goyal <kovid@kovidgoyal.net>\n"
+"PO-Revision-Date: 2019-08-20 15:16+0000\n"
+"Last-Translator: Meteor0id\n"
 "Language-Team: Dutch (http://www.transifex.com/calibre/calibre-plugins/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -90,7 +91,7 @@ msgstr "&Bibliotheekvoorkeuren weergeven..."
 
 #: config.py:191
 msgid "View data stored in the library database for this plugin"
-msgstr "Bekijk gegevens opgeslagen in de bibliotheekdatabase voor deze plugin"
+msgstr "Bekijk gegevens opgeslagen in de bibliotheekgegevensbank voor deze plugin"
 
 #: config.py:204
 msgid "Done"

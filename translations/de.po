@@ -5,7 +5,7 @@
 # Armin Geller <armin.geller@t-online.de>, 2014
 # ILB, 2014
 # Max Vogl <mail@max-vogl.de>, 2014
-# Simon_Schuette <simonschuette@arcor.de>, 2015
+# Simon Schütte, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
