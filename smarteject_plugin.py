@@ -4,7 +4,7 @@ from __future__ import (unicode_literals, division, absolute_import,
                         print_function)
 
 __license__   = 'GPL v3'
-__copyright__ = '2014, Jim Miller'
+__copyright__ = '2019, Jim Miller'
 __docformat__ = 'restructuredtext en'
 
 from calibre.gui2 import question_dialog
@@ -26,7 +26,7 @@ except NameError:
 class SmartEjectPlugin(InterfaceAction):
 
     name = 'SmartEject'
-    
+
     # Declare the main action associated with this plugin
     # The keyboard shortcut can be None if you dont want to use a keyboard
     # shortcut. Remember that currently calibre has no central management for
@@ -92,9 +92,9 @@ class SmartEjectPlugin(InterfaceAction):
                         rl_plugin.sync_now(force_sync=True)
                         return
 
-        
+
         if prefs['checkdups'] and self.gui.library_view.model().db.search_getting_ids(prefs['checkdups_search'], None):
-            
+
             if question_dialog(self.gui, _("Duplicates on Device"), _("There are duplicate ebooks on the device.<p>Display duplicates?"), show_copy_button=False):
 #            print("Duplicates on Device warning:%s"%warning_dialog(self.gui, "Duplicates on Device", "There are duplicate ebooks on the device.", show=True, show_copy_button=False))
                 self.gui.location_manager._location_selected('library')
@@ -105,15 +105,15 @@ class SmartEjectPlugin(InterfaceAction):
         if prefs['checknotinlibrary'] and self.checkdevice(self.gui.memory_view.model(),"Main"):
             self.gui.location_manager._location_selected('main')
             return
-        
+
         if prefs['checknotinlibrary'] and self.checkdevice(self.gui.card_a_view.model(),"Card A"):
             self.gui.location_manager._location_selected('carda')
             return
-        
+
         if prefs['checknotinlibrary'] and self.checkdevice(self.gui.card_b_view.model(),"Card B"):
             self.gui.location_manager._location_selected('cardb')
             return
-        
+
         if prefs['checknotondevice'] and self.gui.library_view.model().db.search_getting_ids(prefs['checknotondevice_search'], None):
             if question_dialog(self.gui,
                                _("Books in Library not on Device"),
@@ -123,14 +123,14 @@ class SmartEjectPlugin(InterfaceAction):
                 self.gui.search.setEditText(prefs['checknotondevice_search'])
                 self.gui.search.do_search()
                 return
-            
+
         self.gui.location_manager._location_selected('library')
 
         self.gui.location_manager._eject_requested()
 
         # if one of the configured searchs, clear it.
         #print("self.gui.search.current_text :(%s)"%self.gui.search.current_text )
-        if self.gui.search.current_text in (prefs['checkdups_search'],prefs['checknotinlibrary_search'],prefs['checknotondevice_search']): 
+        if self.gui.search.current_text in (prefs['checkdups_search'],prefs['checknotinlibrary_search'],prefs['checknotondevice_search']):
             self.gui.search.clear()
 
     def checkdevice(self,model,loc):
@@ -149,7 +149,7 @@ class SmartEjectPlugin(InterfaceAction):
         #print("model.count():%s"%model.count())
 
         return False
-        
+
     def apply_settings(self):
         # No need to do anything with prefs here, but we could.
         prefs
