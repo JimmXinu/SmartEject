@@ -1,3 +1,3 @@
-python3 makeplugin.py
+python makeplugin.py
 
-rem calibre-customize -a SmartEject.zip
+calibre-customize -a SmartEject.zip
