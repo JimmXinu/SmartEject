@@ -126,7 +126,14 @@ class SmartEjectPlugin(InterfaceAction):
 
         self.gui.location_manager._location_selected('library')
 
+        from calibre.gui2.device import device_name_for_plugboards
+        device_name = device_name_for_plugboards(self.gui.device_manager.connected_device.__class__)
+        # print(device_name)
+
         self.gui.location_manager._eject_requested()
+
+        if prefs['stopsmartdevice'] and 'SMART_DEVICE_APP' in device_name:
+            self.gui.device_manager.stop_plugin('smartdevice')
 
         # if one of the configured searchs, clear it.
         #print("self.gui.search.current_text :(%s)"%self.gui.search.current_text )

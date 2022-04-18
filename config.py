@@ -39,6 +39,7 @@ default_prefs['checknotondevice'] = True
 default_prefs['checkdups_search'] = 'ondevice:"("'
 default_prefs['checknotinlibrary_search'] = 'inlibrary:False'
 default_prefs['checknotondevice_search'] = 'not ondevice:"~[a-z]"'
+default_prefs['stopsmartdevice'] = False
 
 def set_library_config(library_config):
     get_gui().current_db.prefs.set_namespaced(PREFS_NAMESPACE,
@@ -116,6 +117,7 @@ class ConfigWidget(QWidget):
         prefs['checkdups_search'] = unicode(self.searches_tab.checkdups_search.text())
         prefs['checknotinlibrary_search'] = unicode(self.searches_tab.checknotinlibrary_search.text())
         prefs['checknotondevice_search'] = unicode(self.searches_tab.checknotondevice_search.text())
+        prefs['stopsmartdevice'] = self.basic_tab.stopsmartdevice.isChecked()
 
         prefs.save_to_db()
 
@@ -170,6 +172,11 @@ class BasicTab(QWidget):
         self.checknotondevice.setToolTip(_('Check for books in the current library that are not on the device.'))
         self.checknotondevice.setChecked(prefs['checknotondevice'])
         self.sl.addWidget(self.checknotondevice)
+
+        self.stopsmartdevice = QCheckBox(_('Stop wireless device connection'),self)
+        self.stopsmartdevice.setToolTip(_('If ejecting a wireless device, also stop the wireless device connection.'))
+        self.stopsmartdevice.setChecked(prefs['stopsmartdevice'])
+        self.sl.addWidget(self.stopsmartdevice)
 
         self.sl.insertStretch(-1)
 
