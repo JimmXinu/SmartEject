@@ -36,7 +36,7 @@ default_prefs['checkreadinglistsync'] = True
 default_prefs['checkdups'] = True
 default_prefs['checknotinlibrary'] = True
 default_prefs['checknotondevice'] = True
-default_prefs['checkdups_search'] = 'ondevice:"("'
+default_prefs['checkdups_search'] = r'ondevice:"~\\("'
 default_prefs['checknotinlibrary_search'] = 'inlibrary:False'
 default_prefs['checknotondevice_search'] = 'not ondevice:"~[a-z]"'
 default_prefs['stopsmartdevice'] = False
@@ -239,6 +239,10 @@ class SearchesTab(QWidget):
         self.sl.addWidget(QLabel(_("Search for Duplicated Books:")))
         self.checkdups_search = QLineEdit(self)
         self.sl.addWidget(self.checkdups_search)
+        # As of Calibre 5.42, the duplicate search needs to change.
+        # Automatically change it if it's the old default search.
+        if prefs['checkdups_search'] == 'ondevice:"("':
+            prefs['checkdups_search'] = default_prefs['checkdups_search']
         self.checkdups_search.setText(prefs['checkdups_search'])
         self.checkdups_search.setToolTip(_('Default is %s')%default_prefs['checkdups_search'])
         self.sl.addSpacing(5)

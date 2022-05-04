@@ -13,7 +13,7 @@ from calibre.gui2 import question_dialog
 from calibre.gui2.actions import InterfaceAction
 
 from calibre_plugins.smarteject.common_utils import get_icon
-from calibre_plugins.smarteject.config import prefs
+from calibre_plugins.smarteject.config import prefs, default_prefs
 
 # pulls in translation files for _() strings
 try:
@@ -93,14 +93,20 @@ class SmartEjectPlugin(InterfaceAction):
                         return
 
 
-        if prefs['checkdups'] and self.gui.library_view.model().db.search_getting_ids(prefs['checkdups_search'], None):
-
-            if question_dialog(self.gui, _("Duplicates on Device"), _("There are duplicate ebooks on the device.<p>Display duplicates?"), show_copy_button=False):
-#            print("Duplicates on Device warning:%s"%warning_dialog(self.gui, "Duplicates on Device", "There are duplicate ebooks on the device.", show=True, show_copy_button=False))
-                self.gui.location_manager._location_selected('library')
-                self.gui.search.setEditText(prefs['checkdups_search'])
-                self.gui.search.do_search()
-                return
+        if prefs['checkdups']:
+            # As of Calibre 5.42, the duplicate search needs to change.
+            # Automatically change it if it's the old default search.
+            if prefs['checkdups_search'] == 'ondevice:"("':
+                prefs['checkdups_search'] = default_prefs['checkdups_search']
+                print("checkdups_search changed to new default value.")
+                prefs.save_to_db()
+            if self.gui.library_view.model().db.search_getting_ids(prefs['checkdups_search'], None):
+                if question_dialog(self.gui, _("Duplicates on Device"), _("There are duplicate ebooks on the device.<p>Display duplicates?"), show_copy_button=False):
+                    #            print("Duplicates on Device warning:%s"%warning_dialog(self.gui, "Duplicates on Device", "There are duplicate ebooks on the device.", show=True, show_copy_button=False))
+                    self.gui.location_manager._location_selected('library')
+                    self.gui.search.setEditText(prefs['checkdups_search'])
+                    self.gui.search.do_search()
+                    return
 
         if prefs['checknotinlibrary'] and self.checkdevice(self.gui.memory_view.model(),"Main"):
             self.gui.location_manager._location_selected('main')
