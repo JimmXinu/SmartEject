@@ -11,7 +11,7 @@ import traceback, copy
 import six
 from six import text_type as unicode
 
-from PyQt5.Qt import (QWidget, QVBoxLayout, QLabel, QLineEdit,
+from PyQt5.Qt import (QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit,
                       QCheckBox, QPushButton, QTabWidget, QScrollArea)
 
 from calibre.gui2 import dynamic, info_dialog
@@ -29,10 +29,13 @@ from calibre_plugins.smarteject.common_utils \
 PREFS_NAMESPACE = 'SmartEjectPlugin'
 PREFS_KEY_SETTINGS = 'settings'
 
+
 # Set defaults used by all.  Library specific settings continue to
 # take from here.
 default_prefs = {}
 default_prefs['checkreadinglistsync'] = True
+default_prefs['checkreadinglistsyncfromdevice'] = False
+default_prefs['silentsyncfromdevice'] = False
 default_prefs['checkdups'] = True
 default_prefs['checknotinlibrary'] = True
 default_prefs['checknotondevice'] = True
@@ -110,6 +113,9 @@ class ConfigWidget(QWidget):
 
     def save_settings(self):
         prefs['checkreadinglistsync'] = self.basic_tab.checkreadinglistsync.isChecked()
+        prefs['checkreadinglistsyncfromdevice'] = self.basic_tab.checkreadinglistsyncfromdevice.isChecked()
+        prefs['silentsyncfromdevice'] = self.basic_tab.silentsyncfromdevice.isChecked()
+
         prefs['checkdups'] = self.basic_tab.checkdups.isChecked()
         prefs['checknotinlibrary'] = self.basic_tab.checknotinlibrary.isChecked()
         prefs['checknotondevice'] = self.basic_tab.checknotondevice.isChecked()
@@ -151,12 +157,29 @@ class BasicTab(QWidget):
         self.sl = QVBoxLayout()
         scrollcontent.setLayout(self.sl)
 
-        self.checkreadinglistsync = QCheckBox(_('Reading List books to Sync'),self)
+        self.checkreadinglistsync = QCheckBox(_('Reading Lists to Sync TO device'),self)
         self.checkreadinglistsync.setToolTip(_('Check Reading List plugin for books ready to Sync to the current device.'))
         self.checkreadinglistsync.setChecked(prefs['checkreadinglistsync'])
         self.sl.addWidget(self.checkreadinglistsync)
+
+        horz = QHBoxLayout()
+        self.checkreadinglistsyncfromdevice = QCheckBox(_('Reading Lists to Sync FROM device'),self)
+        self.checkreadinglistsyncfromdevice.setToolTip(_("Check Reading List plugin for lists that auto populate from device and call Sync Now."))
+        self.checkreadinglistsyncfromdevice.setChecked(prefs['checkreadinglistsyncfromdevice'])
+        horz.addWidget(self.checkreadinglistsyncfromdevice)
+
+        self.silentsyncfromdevice = QCheckBox(_('Sync Silently?'),self)
+        self.silentsyncfromdevice.setToolTip(_("Don't ask each time before calling Reading List's Sync Now--only applies to FROM device lists."))
+        self.silentsyncfromdevice.setChecked(prefs['silentsyncfromdevice'])
+        horz.addWidget(self.silentsyncfromdevice)
+
+        horz.insertStretch(-1)
+        self.sl.addLayout(horz)
+
         if 'Reading List' not in plugin_action.gui.iactions:
             self.checkreadinglistsync.setEnabled(False)
+            self.checkreadinglistsyncfromdevice.setEnabled(False)
+            self.silentsyncfromdevice.setEnabled(False)
 
         self.checkdups = QCheckBox(_('Duplicated Books'),self)
         self.checkdups.setToolTip(_('Check for books that are on the device more than once.'))

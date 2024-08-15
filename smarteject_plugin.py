@@ -79,19 +79,28 @@ class SmartEjectPlugin(InterfaceAction):
             # no device connected, silently skip.
             return
 
-        if 'Reading List' in self.gui.iactions and prefs['checkreadinglistsync']:
+        if 'Reading List' in self.gui.iactions and ( prefs['checkreadinglistsync']
+                                                     or prefs['checkreadinglistsyncfromdevice']):
             rl_plugin = self.gui.iactions['Reading List']
             list_names = rl_plugin.get_list_names(exclude_auto=True)
             all_list_names = rl_plugin.get_list_names(exclude_auto=False)
             auto_list_names = list(set(all_list_names) - set(list_names))
             if self.gui.device_manager.is_device_connected:
                 sync_total = rl_plugin._count_books_for_connected_device()
+                ## why is this setting the enabled for RL?
+                ## Probably RL's rebuild_menus hasn't been called
+                # print(all_list_names)
+                # print(auto_list_names)
+                # print(sync_total)
                 rl_plugin.sync_now_action.setEnabled(bool(sync_total > 0) or len(auto_list_names) > 0)
-                if sync_total > 0:
+                if sync_total > 0 and prefs['checkreadinglistsync']:
                     if question_dialog(self.gui, _("Sync Reading List?"), _("There are books that need syncing according to Reading List.<p>Sync Books?"), show_copy_button=False):
                         rl_plugin.sync_now(force_sync=True)
                         return
-
+                elif len(auto_list_names) > 0 and prefs['checkreadinglistsyncfromdevice']:
+                    if prefs['silentsyncfromdevice'] or question_dialog(self.gui, _("Sync Now Reading List?"), _("There are lists that could be sync'ed according to Reading List.<p>Sync before ejecting?"), show_copy_button=False):
+                        # print("doreadinglistsync")
+                        rl_plugin.sync_now(force_sync=True)
 
         if prefs['checkdups']:
             # As of Calibre 5.42, the duplicate search needs to change.
