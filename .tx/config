@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[calibre-plugins.smarteject]
+[o:calibre:p:calibre-plugins:r:smarteject]
 file_filter = translations/<lang>.po
 source_lang = en
 type = PO

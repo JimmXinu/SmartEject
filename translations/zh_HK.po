@@ -6,13 +6,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2018-12-25 08:54+Central Standard Time\n"
+"POT-Creation-Date: 2024-08-14 20:31-0500\n"
 "PO-Revision-Date: 2014-06-19 23:07+0000\n"
 "Last-Translator: Helen Kwok <hlkwokab@connect.ust.hk>, 2016\n"
-"Language-Team: Chinese (Hong Kong) (http://www.transifex.com/calibre/calibre-plugins/language/zh_HK/)\n"
+"Language-Team: Chinese (Hong Kong) (http://app.transifex.com/calibre/calibre-plugins/language/zh_HK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 "Language: zh_HK\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -22,106 +22,135 @@ msgid ""
 "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
 msgstr ""
 
-#: config.py:107
+#: config.py:109
 msgid "Basic"
 msgstr "基本"
 
-#: config.py:110
+#: config.py:112
 msgid "Searches"
 msgstr "搜尋結果"
 
-#: config.py:140
+#: config.py:146
 msgid "When Ejecting a Device, Check for:"
 msgstr ""
 
-#: config.py:154
-msgid "Reading List books to Sync"
+#: config.py:160
+msgid "Reading Lists to Sync TO device"
 msgstr ""
 
-#: config.py:155
+#: config.py:161
 msgid ""
 "Check Reading List plugin for books ready to Sync to the current device."
 msgstr ""
 
-#: config.py:161
-msgid "Duplicated Books"
-msgstr ""
-
-#: config.py:162
-msgid "Check for books that are on the device more than once."
-msgstr ""
-
 #: config.py:166
-msgid "Deleted Books (not in Library)"
-msgstr "已移除的書籍 (不在書櫃內)"
+msgid "Reading Lists to Sync FROM device"
+msgstr ""
 
 #: config.py:167
-msgid "Check for books on the device that are not in the current library."
+msgid ""
+"Check Reading List plugin for lists that auto populate from device and call "
+"Sync Now."
 msgstr ""
 
 #: config.py:171
+msgid "Sync Silently?"
+msgstr ""
+
+#: config.py:172
+msgid ""
+"Don't ask each time before calling Reading List's Sync Now--only applies to "
+"FROM device lists."
+msgstr ""
+
+#: config.py:184
+msgid "Duplicated Books"
+msgstr ""
+
+#: config.py:185
+msgid "Check for books that are on the device more than once."
+msgstr ""
+
+#: config.py:189
+msgid "Deleted Books (not in Library)"
+msgstr "已移除的書籍 (不在書櫃內)"
+
+#: config.py:190
+msgid "Check for books on the device that are not in the current library."
+msgstr ""
+
+#: config.py:194
 msgid "Added Books (not on Device)"
 msgstr "已加入的書籍 (不在裝置中)"
 
-#: config.py:172
+#: config.py:195
 msgid "Check for books in the current library that are not on the device."
 msgstr ""
 
-#: config.py:180
+#: config.py:199
+msgid "Stop wireless device connection"
+msgstr ""
+
+#: config.py:200
+msgid ""
+"If ejecting a wireless device, also stop the wireless device connection."
+msgstr ""
+
+#: config.py:208
 msgid ""
 "These controls aren't plugin settings as such, but convenience buttons for "
 "setting Keyboard shortcuts and viewing all plugins settings."
 msgstr ""
 
-#: config.py:185
+#: config.py:213
 msgid "Keyboard shortcuts..."
 msgstr "鍵盤捷徑"
 
-#: config.py:186
+#: config.py:214
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr ""
 
-#: config.py:190
+#: config.py:218
 msgid "&View library preferences..."
 msgstr "&觀看書櫃的設定"
 
-#: config.py:191
+#: config.py:219
 msgid "View data stored in the library database for this plugin"
 msgstr ""
 
-#: config.py:204
+#: config.py:232
 msgid "Done"
 msgstr "已完成"
 
-#: config.py:205
+#: config.py:233
 msgid "Confirmation dialogs have all been reset"
 msgstr ""
 
-#: config.py:219
+#: config.py:247
 msgid "Searches to use for:"
 msgstr ""
 
-#: config.py:234
+#: config.py:262
 msgid "Search for Duplicated Books:"
 msgstr ""
 
-#: config.py:238 config.py:245 config.py:252
+#: config.py:270 config.py:277 config.py:284
 msgid "Default is %s"
 msgstr "預設值為 %s"
 
-#: config.py:241
+#: config.py:273
 msgid "Deleted Books (not in Library):"
 msgstr ""
 
-#: config.py:248
+#: config.py:280
 msgid "Added Books (not on Device):"
 msgstr ""
 
-#: config.py:258
+#: config.py:290
 msgid "Restore Defaults"
 msgstr "還原預設值"
 
-#: config.py:259
+#: config.py:291
 msgid "Revert all searches to the defaults."
 msgstr ""
 
@@ -133,38 +162,48 @@ msgstr ""
 msgid "Check for duplicated/deleted/added books before ejecting."
 msgstr ""
 
-#: smarteject_plugin.py:91
+#: smarteject_plugin.py:97
 msgid "Sync Reading List?"
 msgstr "需要同步閱讀清單?"
 
-#: smarteject_plugin.py:91
+#: smarteject_plugin.py:97
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
 msgstr ""
 
-#: smarteject_plugin.py:98
+#: smarteject_plugin.py:101
+msgid "Sync Now Reading List?"
+msgstr ""
+
+#: smarteject_plugin.py:101
+msgid ""
+"There are lists that could be sync'ed according to Reading List.<p>Sync "
+"before ejecting?"
+msgstr ""
+
+#: smarteject_plugin.py:113
 msgid "Duplicates on Device"
 msgstr ""
 
-#: smarteject_plugin.py:98
+#: smarteject_plugin.py:113
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
 msgstr ""
 
-#: smarteject_plugin.py:119
+#: smarteject_plugin.py:134
 msgid "Books in Library not on Device"
 msgstr "不在裝置中而在書櫃內的書籍"
 
-#: smarteject_plugin.py:120
+#: smarteject_plugin.py:135
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
 msgstr ""
 
-#: smarteject_plugin.py:143
+#: smarteject_plugin.py:165
 msgid "Books on Device not in Library"
 msgstr "不在書櫃內而在裝置中的書籍"
 
-#: smarteject_plugin.py:143
+#: smarteject_plugin.py:165
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"
