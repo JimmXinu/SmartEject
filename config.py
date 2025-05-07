@@ -36,12 +36,19 @@ default_prefs = {}
 default_prefs['checkreadinglistsync'] = True
 default_prefs['checkreadinglistsyncfromdevice'] = False
 default_prefs['silentsyncfromdevice'] = False
+
 default_prefs['checkdups'] = True
 default_prefs['checknotinlibrary'] = True
 default_prefs['checknotondevice'] = True
+
+default_prefs['deletedups'] = False
+default_prefs['deletenotinlibrary'] = False
+default_prefs['sendnotondevice'] = False
+
 default_prefs['checkdups_search'] = r'ondevice:"~\\("'
 default_prefs['checknotinlibrary_search'] = 'inlibrary:False'
 default_prefs['checknotondevice_search'] = 'not ondevice:"~[a-z]"'
+
 default_prefs['stopsmartdevice'] = False
 
 def set_library_config(library_config):
@@ -120,6 +127,10 @@ class ConfigWidget(QWidget):
         prefs['checknotinlibrary'] = self.basic_tab.checknotinlibrary.isChecked()
         prefs['checknotondevice'] = self.basic_tab.checknotondevice.isChecked()
 
+        prefs['deletedups'] = self.basic_tab.deletedups.isChecked()
+        prefs['deletenotinlibrary'] = self.basic_tab.deletenotinlibrary.isChecked()
+        prefs['sendnotondevice'] = self.basic_tab.sendnotondevice.isChecked()
+
         prefs['checkdups_search'] = unicode(self.searches_tab.checkdups_search.text())
         prefs['checknotinlibrary_search'] = unicode(self.searches_tab.checknotinlibrary_search.text())
         prefs['checknotondevice_search'] = unicode(self.searches_tab.checknotondevice_search.text())
@@ -171,6 +182,8 @@ class BasicTab(QWidget):
         self.silentsyncfromdevice = QCheckBox(_('Sync Silently?'),self)
         self.silentsyncfromdevice.setToolTip(_("Don't ask each time before calling Reading List's Sync Now--only applies to FROM device lists."))
         self.silentsyncfromdevice.setChecked(prefs['silentsyncfromdevice'])
+        self.silentsyncfromdevice.setEnabled(self.checkreadinglistsyncfromdevice.isChecked())
+        self.checkreadinglistsyncfromdevice.stateChanged.connect(lambda x : self.silentsyncfromdevice.setEnabled(self.checkreadinglistsyncfromdevice.isChecked()))
         horz.addWidget(self.silentsyncfromdevice)
 
         horz.insertStretch(-1)
@@ -181,20 +194,52 @@ class BasicTab(QWidget):
             self.checkreadinglistsyncfromdevice.setEnabled(False)
             self.silentsyncfromdevice.setEnabled(False)
 
+        horz = QHBoxLayout()
         self.checkdups = QCheckBox(_('Duplicated Books'),self)
         self.checkdups.setToolTip(_('Check for books that are on the device more than once.'))
         self.checkdups.setChecked(prefs['checkdups'])
-        self.sl.addWidget(self.checkdups)
+        horz.addWidget(self.checkdups)
 
+        self.deletedups = QCheckBox(_('Delete from Device?'),self)
+        self.deletedups.setToolTip(_('Open Delete dialog for duplicated books on device.'))
+        self.deletedups.setChecked(prefs['deletedups'])
+        self.deletedups.setEnabled(self.checkdups.isChecked())
+        self.checkdups.stateChanged.connect(lambda x : self.deletedups.setEnabled(self.checkdups.isChecked()))
+        horz.addWidget(self.deletedups)
+        horz.insertStretch(-1)
+        self.sl.addLayout(horz)
+
+        horz = QHBoxLayout()
         self.checknotinlibrary = QCheckBox(_('Deleted Books (not in Library)'),self)
         self.checknotinlibrary.setToolTip(_('Check for books on the device that are not in the current library.'))
         self.checknotinlibrary.setChecked(prefs['checknotinlibrary'])
-        self.sl.addWidget(self.checknotinlibrary)
+        horz.addWidget(self.checknotinlibrary)
 
+        self.deletenotinlibrary = QCheckBox(_('Deleted from Device?'),self)
+        self.deletenotinlibrary.setToolTip(_('Delete books on the device that are not in the current library.'))
+        self.deletenotinlibrary.setChecked(prefs['deletenotinlibrary'])
+        self.deletenotinlibrary.setEnabled(self.checknotinlibrary.isChecked())
+        self.checknotinlibrary.stateChanged.connect(lambda x : self.deletenotinlibrary.setEnabled(self.checknotinlibrary.isChecked()))
+        horz.addWidget(self.deletenotinlibrary)
+
+        horz.insertStretch(-1)
+        self.sl.addLayout(horz)
+
+        horz = QHBoxLayout()
         self.checknotondevice = QCheckBox(_('Added Books (not on Device)'),self)
         self.checknotondevice.setToolTip(_('Check for books in the current library that are not on the device.'))
         self.checknotondevice.setChecked(prefs['checknotondevice'])
-        self.sl.addWidget(self.checknotondevice)
+        horz.addWidget(self.checknotondevice)
+
+        self.sendnotondevice = QCheckBox(_('Send to Device?'),self)
+        self.sendnotondevice.setToolTip(_('Send books in the current library that are not on the device.'))
+        self.sendnotondevice.setChecked(prefs['sendnotondevice'])
+        self.sendnotondevice.setEnabled(self.checknotondevice.isChecked())
+        self.checknotondevice.stateChanged.connect(lambda x : self.sendnotondevice.setEnabled(self.checknotondevice.isChecked()))
+        horz.addWidget(self.sendnotondevice)
+
+        horz.insertStretch(-1)
+        self.sl.addLayout(horz)
 
         self.stopsmartdevice = QCheckBox(_('Stop wireless device connection'),self)
         self.stopsmartdevice.setToolTip(_('If ejecting a wireless device, also stop the wireless device connection.'))

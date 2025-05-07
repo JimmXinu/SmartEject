@@ -110,33 +110,64 @@ class SmartEjectPlugin(InterfaceAction):
                 print("checkdups_search changed to new default value.")
                 prefs.save_to_db()
             if self.gui.library_view.model().db.search_getting_ids(prefs['checkdups_search'], None):
-                if question_dialog(self.gui, _("Duplicates on Device"), _("There are duplicate ebooks on the device.<p>Display duplicates?"), show_copy_button=False):
-                    #            print("Duplicates on Device warning:%s"%warning_dialog(self.gui, "Duplicates on Device", "There are duplicate ebooks on the device.", show=True, show_copy_button=False))
+                dodelete = prefs['deletedups']
+                if dodelete:
+                    qtext = _("There are duplicate ebooks on the device.<p>Delete duplicates?  (Make sure you uncheck the ones you want to keep).")
+                else:
+                    qtext = _("There are duplicate ebooks on the device.<p>Display duplicates?")
+                if question_dialog(self.gui, _("Duplicates on Device"), qtext, show_copy_button=False):
                     self.gui.location_manager._location_selected('library')
                     self.gui.search.setEditText(prefs['checkdups_search'])
                     self.gui.search.do_search()
+                    if dodelete:
+                        self.gui.library_view.selectAll()
+                        self.gui.iactions['Remove Books'].remove_matching_books_from_device()
                     return
 
-        if prefs['checknotinlibrary'] and self.checkdevice(self.gui.memory_view.model(),"Main"):
-            self.gui.location_manager._location_selected('main')
-            return
-
-        if prefs['checknotinlibrary'] and self.checkdevice(self.gui.card_a_view.model(),"Card A"):
-            self.gui.location_manager._location_selected('carda')
-            return
-
-        if prefs['checknotinlibrary'] and self.checkdevice(self.gui.card_b_view.model(),"Card B"):
-            self.gui.location_manager._location_selected('cardb')
-            return
+        if prefs['checknotinlibrary']:
+            devices = [ (self.gui.memory_view, 'Main', 'main'),
+                        (self.gui.card_a_view, 'Card A', 'carda'),
+                        (self.gui.card_b_view, 'Card B', 'cardb') ]
+            for (view, viewname, locationname) in devices:
+                model = view.model()
+                savesearch = model.last_search
+                model.search(prefs['checknotinlibrary_search'])
+                if model.count() > 0:
+                    dodelete = prefs['deletenotinlibrary']
+                    if dodelete:
+                        qtext = _("There are books on the device in %s that are not in the Library.<p>Delete books not in Library?")%viewname
+                    else:
+                        qtext = _("There are books on the device in %s that are not in the Library.<p>Display books not in Library?")%viewname
+                    if question_dialog(self.gui, _("Books on Device not in Library"), qtext, show_copy_button=False):
+                        self.gui.search.setEditText(prefs['checknotinlibrary_search'])
+                        self.gui.search.do_search()
+                        self.gui.location_manager._location_selected(locationname)
+                        if dodelete:
+                            view.selectAll()
+                            # remove_matching_books_from_device()
+                            # always operates on library_view, can't
+                            # use here on device view.
+                            self.gui.iactions['Remove Books'].delete_books()
+                        return
+                model.search(savesearch)
+                #print("model.count():%s"%model.count())
 
         if prefs['checknotondevice'] and self.gui.library_view.model().db.search_getting_ids(prefs['checknotondevice_search'], None):
+            dosend = prefs['sendnotondevice']
+            if dosend:
+                qtext = _("There are books in the Library that are not on the Device.<p>Send books not on Device?")
+            else:
+                qtext = _("There are books in the Library that are not on the Device.<p>Display books not on Device?")
             if question_dialog(self.gui,
                                _("Books in Library not on Device"),
-                               _("There are books in the Library that are not on the Device.<p>Display books not on Device?"),
+                               qtext,
                                show_copy_button=False):
                 self.gui.location_manager._location_selected('library')
                 self.gui.search.setEditText(prefs['checknotondevice_search'])
                 self.gui.search.do_search()
+                if dosend:
+                    self.gui.library_view.selectAll()
+                    self.gui.iactions['Send To Device'].do_sync()
                 return
 
         self.gui.location_manager._location_selected('library')
@@ -154,23 +185,6 @@ class SmartEjectPlugin(InterfaceAction):
         #print("self.gui.search.current_text :(%s)"%self.gui.search.current_text )
         if self.gui.search.current_text in (prefs['checkdups_search'],prefs['checknotinlibrary_search'],prefs['checknotondevice_search']):
             self.gui.search.clear()
-
-    def checkdevice(self,model,loc):
-        savesearch = model.last_search
-        #print("\nmodel.last_search:%s"%model.last_search)
-        #print("model.count():%s"%model.count())
-        model.search(prefs['checknotinlibrary_search'])
-        #print("model.count():%s"%model.count())
-        if model.count() > 0:
-            if question_dialog(self.gui, _("Books on Device not in Library"), _("There are books on the device in %s that are not in the Library.<p>Display books not in Library?")%loc, show_copy_button=False):
-#            #print("not in Library warning:%s"%warning_dialog(self.gui, "Books on Device not in Library", "There are books on the device not in Library.", show=True, show_copy_button=False))
-                self.gui.search.setEditText(prefs['checknotinlibrary_search'])
-                self.gui.search.do_search()
-                return True
-        model.search(savesearch)
-        #print("model.count():%s"%model.count())
-
-        return False
 
     def apply_settings(self):
         # No need to do anything with prefs here, but we could.
