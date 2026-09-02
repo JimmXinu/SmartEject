@@ -2,253 +2,251 @@
 # Copyright (C) YEAR ORGANIZATION
 # 
 # Translators:
-# JimmXinu, 2025
-# Ognyan Kolev <reklamisti@yahoo.com>, 2015
-# Tsvetanka Zhekova, 2015
+# Junghee Lee <daemul72@gmail.com>, 2022,2026
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2025-05-08 08:27-0500\n"
 "PO-Revision-Date: 2014-06-19 23:07+0000\n"
-"Last-Translator: JimmXinu, 2025\n"
-"Language-Team: Bulgarian (http://app.transifex.com/calibre/calibre-plugins/language/bg/)\n"
+"Last-Translator: Junghee Lee <daemul72@gmail.com>, 2022,2026\n"
+"Language-Team: Korean (http://app.transifex.com/calibre/calibre-plugins/language/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"Language: bg\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: __init__.py:32
 msgid ""
 "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
-msgstr "UI плъгин за да проверите за Дубликати / Липсващи / Добавено Книги, когато Изключвате устройствата."
+msgstr "장치를 꺼낼 때 중복/누락/추가된 도서를 확인하는 UI 플러그인."
 
 #: config.py:116
 msgid "Basic"
-msgstr "Основа"
+msgstr "기본"
 
 #: config.py:119
 msgid "Searches"
-msgstr "Търсения"
+msgstr "검색"
 
 #: config.py:157
 msgid "When Ejecting a Device, Check for:"
-msgstr "Когато изключвате устройство, проверете за:"
+msgstr "장치를 꺼낼 때 확인할 항목:"
 
 #: config.py:171
 msgid "Reading Lists to Sync TO device"
-msgstr ""
+msgstr "장치로 동기화할 읽기 목록"
 
 #: config.py:172
 msgid ""
 "Check Reading List plugin for books ready to Sync to the current device."
-msgstr "Проверете  дали плъгина списък за четене на книги е готов да се синхронизира с текущото устройството."
+msgstr "현재 장치로 동기화할 준비가 된 도서가 있는지 Reading List 플러그인에서 확인합니다."
 
 #: config.py:177
 msgid "Reading Lists to Sync FROM device"
-msgstr ""
+msgstr "장치에서 동기화할 읽기 목록"
 
 #: config.py:178
 msgid ""
 "Check Reading List plugin for lists that auto populate from device and call "
 "Sync Now."
-msgstr ""
+msgstr "장치에서 자동으로 채워지는 목록이 있는지 Reading List 플러그인에서 확인하고 지금 동기화를 실행합니다."
 
 #: config.py:182
 msgid "Sync Silently?"
-msgstr ""
+msgstr "동기화를 자동으로 진행하시겠습니까?"
 
 #: config.py:183
 msgid ""
 "Don't ask each time before calling Reading List's Sync Now--only applies to "
 "FROM device lists."
-msgstr ""
+msgstr "Reading List의 지금 동기화를 호출하기 전에 매번 묻지 않습니다. 장치에서 가져오는 목록에만 적용됩니다."
 
 #: config.py:198
 msgid "Duplicated Books"
-msgstr "Дублирани книги"
+msgstr "중복된 책"
 
 #: config.py:199
 msgid "Check for books that are on the device more than once."
-msgstr "Проверка за книги, които са записани в устройството повече от веднъж."
+msgstr "장치에 두 번 이상 들어 있는 도서를 확인합니다."
 
 #: config.py:203
 msgid "Delete from Device?"
-msgstr ""
+msgstr "기기에서 삭제하시겠습니까?"
 
 #: config.py:204
 msgid "Open Delete dialog for duplicated books on device."
-msgstr ""
+msgstr "장치에 있는 중복 도서의 삭제 대화상자를 엽니다."
 
 #: config.py:213
 msgid "Deleted Books (not in Library)"
-msgstr "Изтрити книги (не и в Библиотеката)"
+msgstr "삭제된 도서(라이브러리에 없음)"
 
 #: config.py:214
 msgid "Check for books on the device that are not in the current library."
-msgstr "Проверка за книги в устройството, които понастоящем не са включени в настоящата библиотеката."
+msgstr "현재 라이브러리에 없는 도서가 장치에 있는지 확인합니다."
 
 #: config.py:218
 msgid "Deleted from Device?"
-msgstr ""
+msgstr "해당 항목이 기기에서 삭제되었습니까?"
 
 #: config.py:219
 msgid "Delete books on the device that are not in the current library."
-msgstr ""
+msgstr "현재 라이브러리에 없는 도서를 장치에서 삭제합니다."
 
 #: config.py:229
 msgid "Added Books (not on Device)"
-msgstr "Добавени книги (извън устройството)"
+msgstr "추가된 도서(장치에 없음)"
 
 #: config.py:230
 msgid "Check for books in the current library that are not on the device."
-msgstr "Проверка за книги в актуалната библиотека, които не са записани в устройството."
+msgstr "현재 라이브러리에는 있지만 장치에는 없는 도서를 확인합니다."
 
 #: config.py:234
 msgid "Send to Device?"
-msgstr ""
+msgstr "해당 항목을 기기로 전송하시겠습니까?"
 
 #: config.py:235
 msgid "Send books in the current library that are not on the device."
-msgstr ""
+msgstr "현재 라이브러리에는 있지만 장치에는 없는 도서를 장치로 보냅니다."
 
 #: config.py:244
 msgid "Stop wireless device connection"
-msgstr ""
+msgstr "무선 장치 연결 중지"
 
 #: config.py:245
 msgid ""
 "If ejecting a wireless device, also stop the wireless device connection."
-msgstr ""
+msgstr "무선 장치를 꺼내는 경우 무선 장치 연결도 함께 중지합니다."
 
 #: config.py:253
 msgid ""
 "These controls aren't plugin settings as such, but convenience buttons for "
 "setting Keyboard shortcuts and viewing all plugins settings."
-msgstr "Тези контроли не са настройки за Плъгин, а удобни  бутони за определяне на Клавиши за бърз достъп и разглеждане на всички настройки на плъгини."
+msgstr "이 컨트롤은 플러그인 설정 자체는 아니며, 단축키를 설정하고 모든 플러그인 설정을 보는 편의 버튼입니다."
 
 #: config.py:258
 msgid "Keyboard shortcuts..."
-msgstr "Клавишни икони..."
+msgstr "키보드 단축키..."
 
 #: config.py:259
 msgid "Edit the keyboard shortcuts associated with this plugin"
-msgstr "Редактиране на клавишните икони асоциирани с този плъгин."
+msgstr "이 플러그인에 연결된 키보드 단축키를 편집합니다"
 
 #: config.py:263
 msgid "&View library preferences..."
-msgstr "Предпочитания за изгледа на библиотеката"
+msgstr "서재 설정 보기(&B)..."
 
 #: config.py:264
 msgid "View data stored in the library database for this plugin"
-msgstr "Преглед на данните за този плъгин, съхранявани в базата данни на библиотеката."
+msgstr "이 플러그인에 대해 서재 데이터베이스에 저장된 데이터를 봅니다"
 
 #: config.py:277
 msgid "Done"
-msgstr "Готово"
+msgstr "완료"
 
 #: config.py:278
 msgid "Confirmation dialogs have all been reset"
-msgstr "Всички диалози за потвърждение са нулирани"
+msgstr "확인 대화상자가 모두 초기화되었습니다"
 
 #: config.py:292
 msgid "Searches to use for:"
-msgstr "Търсенията да се използват за:"
+msgstr "사용할 검색:"
 
 #: config.py:307
 msgid "Search for Duplicated Books:"
-msgstr "Търсене на дублиращи се книги:"
+msgstr "중복 도서 검색:"
 
 #: config.py:315 config.py:322 config.py:329
 msgid "Default is %s"
-msgstr "По подразбиране е %s"
+msgstr "기본값은 %s"
 
 #: config.py:318
 msgid "Deleted Books (not in Library):"
-msgstr "Изтрити книги (извън Библиотеката):"
+msgstr "삭제된 도서(라이브러리에 없음):"
 
 #: config.py:325
 msgid "Added Books (not on Device):"
-msgstr "Добавени книги (извън устройството):"
+msgstr "추가된 도서(장치에 없음):"
 
 #: config.py:335
 msgid "Restore Defaults"
-msgstr "Възстановяване на настройките по подразбиране"
+msgstr "기본값으로 복구"
 
 #: config.py:336
 msgid "Revert all searches to the defaults."
-msgstr "Връщане на всички търсения към настройките по подразбиране."
+msgstr "모든 검색을 기본값으로 되돌립니다."
 
 #: smarteject_plugin.py:36 smarteject_plugin.py:69
 msgid "SmartEject"
-msgstr "УмноИзключване"
+msgstr "SmartEject"
 
 #: smarteject_plugin.py:37
 msgid "Check for duplicated/deleted/added books before ejecting."
-msgstr "Проверете за дубликати/изтрити/добавени книги преди  изключване."
+msgstr "꺼내기 전에 중복/삭제/추가된 도서를 확인합니다."
 
 #: smarteject_plugin.py:97
 msgid "Sync Reading List?"
-msgstr "Да се синхронизира ли списъка за четене?"
+msgstr "읽기 목록을 동기화하시겠습니까?"
 
 #: smarteject_plugin.py:97
 msgid ""
 "There are books that need syncing according to Reading List.<p>Sync Books?"
-msgstr "Има книги, които е необходимо да се синхронизират според листа за четене.  <p> Да се синхронизират ли книгите?"
+msgstr "Reading List에 따르면 동기화가 필요한 도서가 있습니다.<p>도서를 동기화하시겠습니까?"
 
 #: smarteject_plugin.py:101
 msgid "Sync Now Reading List?"
-msgstr ""
+msgstr "지금 읽기 목록을 동기화하시겠습니까?"
 
 #: smarteject_plugin.py:101
 msgid ""
 "There are lists that could be sync'ed according to Reading List.<p>Sync "
 "before ejecting?"
-msgstr ""
+msgstr "Reading List에 따르면 동기화할 수 있는 목록이 있습니다.<p>꺼내기 전에 동기화하시겠습니까?"
 
 #: smarteject_plugin.py:115
 msgid ""
 "There are duplicate ebooks on the device.<p>Delete duplicates?  (Make sure "
 "you uncheck the ones you want to keep)."
-msgstr ""
+msgstr "장치에 중복 전자책이 있습니다.<p>중복 항목을 삭제하시겠습니까?  (유지할 항목은 반드시 선택 해제하세요.)"
 
 #: smarteject_plugin.py:117
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
-msgstr "Има дублиращи се книги на устройството.<p> Да се покажат ли дубликатите?"
+msgstr "장치에 중복 전자책이 있습니다.<p>중복 항목을 표시하시겠습니까?"
 
 #: smarteject_plugin.py:118
 msgid "Duplicates on Device"
-msgstr "Дублиране на устройството"
+msgstr "장치의 중복 항목"
 
 #: smarteject_plugin.py:138
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Delete "
 "books not in Library?"
-msgstr ""
+msgstr "%s 장치에 라이브러리에 없는 도서가 있습니다.<p>라이브러리에 없는 도서를 삭제하시겠습니까?"
 
 #: smarteject_plugin.py:140
 msgid ""
 "There are books on the device in %s that are not in the Library.<p>Display "
 "books not in Library?"
-msgstr "Има книги на устройството в %s, които не са в Библиотеката. Да се покажат ли книгите, които не са в Библиотеката?"
+msgstr "%s 장치에 라이브러리에 없는 도서가 있습니다.<p>라이브러리에 없는 도서를 표시하시겠습니까?"
 
 #: smarteject_plugin.py:141
 msgid "Books on Device not in Library"
-msgstr "Книги в устройството извън Библиотеката"
+msgstr "장치에는 있지만 라이브러리에는 없는 도서"
 
 #: smarteject_plugin.py:158
 msgid ""
 "There are books in the Library that are not on the Device.<p>Send books not "
 "on Device?"
-msgstr ""
+msgstr "라이브러리에는 있지만 장치에는 없는 도서가 있습니다.<p>장치에 없는 도서를 보낼까요?"
 
 #: smarteject_plugin.py:160
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
-msgstr "Има книги в библиотеката, които не са на устройствойството. Да се покажат ли книгите, които не са на устройството?"
+msgstr "라이브러리에는 있지만 장치에는 없는 도서가 있습니다.<p>장치에 없는 도서를 표시하시겠습니까?"
 
 #: smarteject_plugin.py:162
 msgid "Books in Library not on Device"
-msgstr "Книги в библиотеката, които не са на устройството"
+msgstr "라이브러리에는 있지만 장치에는 없는 도서"

@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2024-08-14 20:31-0500\n"
+"POT-Creation-Date: 2025-05-08 08:27-0500\n"
 "PO-Revision-Date: 2014-06-19 23:07+0000\n"
 "Last-Translator: Romain, 2019\n"
 "Language-Team: French (http://app.transifex.com/calibre/calibre-plugins/language/fr/)\n"
@@ -23,135 +23,159 @@ msgid ""
 "UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
 msgstr "Extension pour vérifier la présence de livres En double, Manquants ou Ajoutés à l'éjection du dispositif."
 
-#: config.py:109
+#: config.py:116
 msgid "Basic"
 msgstr "De base"
 
-#: config.py:112
+#: config.py:119
 msgid "Searches"
 msgstr "Recherches"
 
-#: config.py:146
+#: config.py:157
 msgid "When Ejecting a Device, Check for:"
 msgstr "A l'éjection d'un dispositif, vérifier :"
 
-#: config.py:160
+#: config.py:171
 msgid "Reading Lists to Sync TO device"
 msgstr ""
 
-#: config.py:161
+#: config.py:172
 msgid ""
 "Check Reading List plugin for books ready to Sync to the current device."
 msgstr "Vérifier l'extension Reading List pour les livres qui sont prêts à être synchronisés sur le dispositif actuel."
 
-#: config.py:166
+#: config.py:177
 msgid "Reading Lists to Sync FROM device"
 msgstr ""
 
-#: config.py:167
+#: config.py:178
 msgid ""
 "Check Reading List plugin for lists that auto populate from device and call "
 "Sync Now."
 msgstr ""
 
-#: config.py:171
+#: config.py:182
 msgid "Sync Silently?"
 msgstr ""
 
-#: config.py:172
+#: config.py:183
 msgid ""
 "Don't ask each time before calling Reading List's Sync Now--only applies to "
 "FROM device lists."
 msgstr ""
 
-#: config.py:184
+#: config.py:198
 msgid "Duplicated Books"
 msgstr "Livres en doublon"
 
-#: config.py:185
+#: config.py:199
 msgid "Check for books that are on the device more than once."
 msgstr "Vérifier les livres qui sont plus d'une fois sur le dispositif."
 
-#: config.py:189
+#: config.py:203
+msgid "Delete from Device?"
+msgstr ""
+
+#: config.py:204
+msgid "Open Delete dialog for duplicated books on device."
+msgstr ""
+
+#: config.py:213
 msgid "Deleted Books (not in Library)"
 msgstr "Livres supprimés (absents de la bibliothèque)"
 
-#: config.py:190
+#: config.py:214
 msgid "Check for books on the device that are not in the current library."
 msgstr "Vérifier les livres sur le dispositif qui ne sont pas dans la bibliothèque actuelle."
 
-#: config.py:194
+#: config.py:218
+msgid "Deleted from Device?"
+msgstr ""
+
+#: config.py:219
+msgid "Delete books on the device that are not in the current library."
+msgstr ""
+
+#: config.py:229
 msgid "Added Books (not on Device)"
 msgstr "Livres ajoutés (absents du dispositif)"
 
-#: config.py:195
+#: config.py:230
 msgid "Check for books in the current library that are not on the device."
 msgstr "Vérifier les livres dans la bibliothèque actuelle qui ne sont pas sur le dispositif."
 
-#: config.py:199
+#: config.py:234
+msgid "Send to Device?"
+msgstr ""
+
+#: config.py:235
+msgid "Send books in the current library that are not on the device."
+msgstr ""
+
+#: config.py:244
 msgid "Stop wireless device connection"
 msgstr ""
 
-#: config.py:200
+#: config.py:245
 msgid ""
 "If ejecting a wireless device, also stop the wireless device connection."
 msgstr ""
 
-#: config.py:208
+#: config.py:253
 msgid ""
 "These controls aren't plugin settings as such, but convenience buttons for "
 "setting Keyboard shortcuts and viewing all plugins settings."
 msgstr "Ces contrôles ne sont pas des paramètres du greffon en soi, mais des boutons de commodité pour paramétrer les raccourcis clavier et afficher les paramètres de tous les greffons."
 
-#: config.py:213
+#: config.py:258
 msgid "Keyboard shortcuts..."
 msgstr "Raccourcis clavier..."
 
-#: config.py:214
+#: config.py:259
 msgid "Edit the keyboard shortcuts associated with this plugin"
 msgstr "Éditer les raccourcis clavier associés avec ce greffon"
 
-#: config.py:218
+#: config.py:263
 msgid "&View library preferences..."
 msgstr "&Voir les préférences de la bibliothèque"
 
-#: config.py:219
+#: config.py:264
 msgid "View data stored in the library database for this plugin"
 msgstr "Voir les données conservées dans la base de données de la bibliothèque pour ce greffon"
 
-#: config.py:232
+#: config.py:277
 msgid "Done"
 msgstr "Terminé"
 
-#: config.py:233
+#: config.py:278
 msgid "Confirmation dialogs have all been reset"
 msgstr "Les dialogues de confirmations ont tous été réinitialisés"
 
-#: config.py:247
+#: config.py:292
 msgid "Searches to use for:"
 msgstr "Recherches à utiliser pour :"
 
-#: config.py:262
+#: config.py:307
 msgid "Search for Duplicated Books:"
 msgstr "Recherche de livres en doublon :"
 
-#: config.py:270 config.py:277 config.py:284
+#: config.py:315 config.py:322 config.py:329
 msgid "Default is %s"
 msgstr "La configuration par défaut est %s"
 
-#: config.py:273
+#: config.py:318
 msgid "Deleted Books (not in Library):"
 msgstr "Livres supprimés (absents de la bibliothèque) :"
 
-#: config.py:280
+#: config.py:325
 msgid "Added Books (not on Device):"
 msgstr "Livres ajoutés (absents du dispositif) :"
 
-#: config.py:290
+#: config.py:335
 msgid "Restore Defaults"
 msgstr "Restaurer les paramètres par défaut"
 
-#: config.py:291
+#: config.py:336
 msgid "Revert all searches to the defaults."
 msgstr "Restaurer toutes les recherches à la configuration par défaut."
 
@@ -182,30 +206,48 @@ msgid ""
 "before ejecting?"
 msgstr ""
 
-#: smarteject_plugin.py:113
-msgid "Duplicates on Device"
-msgstr "Doublons sur le dispositif"
+#: smarteject_plugin.py:115
+msgid ""
+"There are duplicate ebooks on the device.<p>Delete duplicates?  (Make sure "
+"you uncheck the ones you want to keep)."
+msgstr ""
 
-#: smarteject_plugin.py:113
+#: smarteject_plugin.py:117
 msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
 msgstr "Il y a des livres en doublon sur le dispositif.<p>Afficher les doublons ?"
 
-#: smarteject_plugin.py:134
-msgid "Books in Library not on Device"
-msgstr "Livres dans la bibliothèque absents du dispositif"
+#: smarteject_plugin.py:118
+msgid "Duplicates on Device"
+msgstr "Doublons sur le dispositif"
 
-#: smarteject_plugin.py:135
+#: smarteject_plugin.py:138
+msgid ""
+"There are books on the device in %s that are not in the Library.<p>Delete "
+"books not in Library?"
+msgstr ""
+
+#: smarteject_plugin.py:140
+msgid ""
+"There are books on the device in %s that are not in the Library.<p>Display "
+"books not in Library?"
+msgstr "Il y a des livres sur le dispositif dans %s qui ne sont pas dans la bibliothèque.<p>Afficher les livres qui ne sont pas dans la bibliothèque ?"
+
+#: smarteject_plugin.py:141
+msgid "Books on Device not in Library"
+msgstr "Livres sur le dispositif absents de la bibliothèque"
+
+#: smarteject_plugin.py:158
+msgid ""
+"There are books in the Library that are not on the Device.<p>Send books not "
+"on Device?"
+msgstr ""
+
+#: smarteject_plugin.py:160
 msgid ""
 "There are books in the Library that are not on the Device.<p>Display books "
 "not on Device?"
 msgstr "Il y a des livres dans la bibliothèque  qui ne sont pas sur le  dispositif.<p>Afficher les livres qui ne sont pas sur le dispositif ?"
 
-#: smarteject_plugin.py:165
-msgid "Books on Device not in Library"
-msgstr "Livres sur le dispositif absents de la bibliothèque"
-
-#: smarteject_plugin.py:165
-msgid ""
-"There are books on the device in %s that are not in the Library.<p>Display "
-"books not in Library?"
-msgstr "Il y a des livres sur le dispositif dans %s qui ne sont pas dans la bibliothèque.<p>Afficher les livres qui ne sont pas dans la bibliothèque ?"
+#: smarteject_plugin.py:162
+msgid "Books in Library not on Device"
+msgstr "Livres dans la bibliothèque absents du dispositif"

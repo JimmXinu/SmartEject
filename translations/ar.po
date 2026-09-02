@@ -1,0 +1,253 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# 
+# Translators:
+# Usama Khalil, 2025
+# Usama Khalil, 2025
+msgid ""
+msgstr ""
+"Project-Id-Version: calibre-plugins\n"
+"POT-Creation-Date: 2025-05-08 08:27-0500\n"
+"PO-Revision-Date: 2014-06-19 23:07+0000\n"
+"Last-Translator: Usama Khalil, 2025\n"
+"Language-Team: Arabic (http://app.transifex.com/calibre/calibre-plugins/language/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: __init__.py:32
+msgid ""
+"UI plugin to Check for Duplicate/Missing/Added Books when Ejecting Devices."
+msgstr "إضافة واجهة مستخدم للتحقق من الكتب المكررة/المفقودة/المضافة عند إخراج الأجهزة."
+
+#: config.py:116
+msgid "Basic"
+msgstr "أساسي"
+
+#: config.py:119
+msgid "Searches"
+msgstr "عمليات البحث"
+
+#: config.py:157
+msgid "When Ejecting a Device, Check for:"
+msgstr "عند إخراج جهاز، تحقق من:"
+
+#: config.py:171
+msgid "Reading Lists to Sync TO device"
+msgstr "قوائم القراءة للمزامنة إلى الجهاز"
+
+#: config.py:172
+msgid ""
+"Check Reading List plugin for books ready to Sync to the current device."
+msgstr "تحقق من إضافة قائمة القراءة للكتب الجاهزة للمزامنة مع الجهاز الحالي."
+
+#: config.py:177
+msgid "Reading Lists to Sync FROM device"
+msgstr "قوائم القراءة للمزامنة من الجهاز"
+
+#: config.py:178
+msgid ""
+"Check Reading List plugin for lists that auto populate from device and call "
+"Sync Now."
+msgstr "تحقق من إضافة قائمة القراءة للقوائم التي يتم ملؤها تلقائيًا من الجهاز واستدعاء مزامنة الآن."
+
+#: config.py:182
+msgid "Sync Silently?"
+msgstr "مزامنة بصمت؟"
+
+#: config.py:183
+msgid ""
+"Don't ask each time before calling Reading List's Sync Now--only applies to "
+"FROM device lists."
+msgstr "لا تسأل في كل مرة قبل استدعاء مزامنة قائمة القراءة الآن - ينطبق فقط على قوائم من الجهاز."
+
+#: config.py:198
+msgid "Duplicated Books"
+msgstr "كتب مكررة"
+
+#: config.py:199
+msgid "Check for books that are on the device more than once."
+msgstr "التحقق من الكتب الموجودة على الجهاز أكثر من مرة."
+
+#: config.py:203
+msgid "Delete from Device?"
+msgstr "حذف من الجهاز؟"
+
+#: config.py:204
+msgid "Open Delete dialog for duplicated books on device."
+msgstr "فتح مربع حوار الحذف للكتب المكررة على الجهاز."
+
+#: config.py:213
+msgid "Deleted Books (not in Library)"
+msgstr "كتب محذوفة (ليست في المكتبة)"
+
+#: config.py:214
+msgid "Check for books on the device that are not in the current library."
+msgstr "التحقق من الكتب الموجودة على الجهاز والتي ليست في المكتبة الحالية."
+
+#: config.py:218
+msgid "Deleted from Device?"
+msgstr "حذفت من الجهاز؟"
+
+#: config.py:219
+msgid "Delete books on the device that are not in the current library."
+msgstr "حذف الكتب الموجودة على الجهاز والتي ليست في المكتبة الحالية."
+
+#: config.py:229
+msgid "Added Books (not on Device)"
+msgstr "كتب مضافة (ليست على الجهاز)"
+
+#: config.py:230
+msgid "Check for books in the current library that are not on the device."
+msgstr "التحقق من الكتب الموجودة في المكتبة الحالية والتي ليست على الجهاز."
+
+#: config.py:234
+msgid "Send to Device?"
+msgstr "إرسال إلى الجهاز؟"
+
+#: config.py:235
+msgid "Send books in the current library that are not on the device."
+msgstr "إرسال الكتب الموجودة في المكتبة الحالية والتي ليست على الجهاز."
+
+#: config.py:244
+msgid "Stop wireless device connection"
+msgstr "إيقاف اتصال الجهاز اللاسلكي"
+
+#: config.py:245
+msgid ""
+"If ejecting a wireless device, also stop the wireless device connection."
+msgstr "إذا كنت تقوم بإخراج جهاز لاسلكي، أوقف أيضًا اتصال الجهاز اللاسلكي."
+
+#: config.py:253
+msgid ""
+"These controls aren't plugin settings as such, but convenience buttons for "
+"setting Keyboard shortcuts and viewing all plugins settings."
+msgstr "هذه الضوابط ليست إعدادات إضافة بحد ذاتها، بل هي أزرار ملائمة لـ تعيين اختصارات لوحة المفاتيح وعرض جميع إعدادات الإضافات."
+
+#: config.py:258
+msgid "Keyboard shortcuts..."
+msgstr "اختصارات لوحة المفاتيح..."
+
+#: config.py:259
+msgid "Edit the keyboard shortcuts associated with this plugin"
+msgstr "تحرير اختصارات لوحة المفاتيح المرتبطة بهذه الإضافة"
+
+#: config.py:263
+msgid "&View library preferences..."
+msgstr "&عرض تفضيلات المكتبة..."
+
+#: config.py:264
+msgid "View data stored in the library database for this plugin"
+msgstr "عرض البيانات المخزنة في قاعدة بيانات المكتبة لهذه الإضافة"
+
+#: config.py:277
+msgid "Done"
+msgstr "تم"
+
+#: config.py:278
+msgid "Confirmation dialogs have all been reset"
+msgstr "تمت إعادة تعيين جميع مربعات حوار التأكيد"
+
+#: config.py:292
+msgid "Searches to use for:"
+msgstr "عمليات البحث للاستخدام من أجل:"
+
+#: config.py:307
+msgid "Search for Duplicated Books:"
+msgstr "البحث عن كتب مكررة:"
+
+#: config.py:315 config.py:322 config.py:329
+msgid "Default is %s"
+msgstr "الافتراضي هو %s"
+
+#: config.py:318
+msgid "Deleted Books (not in Library):"
+msgstr "كتب محذوفة (ليست في المكتبة):"
+
+#: config.py:325
+msgid "Added Books (not on Device):"
+msgstr "كتب مضافة (ليست على الجهاز):"
+
+#: config.py:335
+msgid "Restore Defaults"
+msgstr "استعادة الافتراضيات"
+
+#: config.py:336
+msgid "Revert all searches to the defaults."
+msgstr "إعادة جميع عمليات البحث إلى الافتراضيات."
+
+#: smarteject_plugin.py:36 smarteject_plugin.py:69
+msgid "SmartEject"
+msgstr "SmartEject"
+
+#: smarteject_plugin.py:37
+msgid "Check for duplicated/deleted/added books before ejecting."
+msgstr "التحقق من الكتب المكررة/المحذوفة/المضافة قبل الإخراج."
+
+#: smarteject_plugin.py:97
+msgid "Sync Reading List?"
+msgstr "مزامنة قائمة القراءة؟"
+
+#: smarteject_plugin.py:97
+msgid ""
+"There are books that need syncing according to Reading List.<p>Sync Books?"
+msgstr "هناك كتب تحتاج إلى مزامنة وفقًا لقائمة القراءة.<p>مزامنة الكتب؟"
+
+#: smarteject_plugin.py:101
+msgid "Sync Now Reading List?"
+msgstr "مزامنة قائمة القراءة الآن؟"
+
+#: smarteject_plugin.py:101
+msgid ""
+"There are lists that could be sync'ed according to Reading List.<p>Sync "
+"before ejecting?"
+msgstr "هناك قوائم يمكن مزامنتها وفقًا لقائمة القراءة.<p>مزامنة قبل الإخراج؟"
+
+#: smarteject_plugin.py:115
+msgid ""
+"There are duplicate ebooks on the device.<p>Delete duplicates?  (Make sure "
+"you uncheck the ones you want to keep)."
+msgstr "توجد كتب إلكترونية مكررة على الجهاز.<p>هل تريد حذف التكرارات؟ (تأكد من إلغاء تحديد تلك التي تريد الاحتفاظ بها)."
+
+#: smarteject_plugin.py:117
+msgid "There are duplicate ebooks on the device.<p>Display duplicates?"
+msgstr "توجد كتب إلكترونية مكررة على الجهاز.<p>عرض التكرارات؟"
+
+#: smarteject_plugin.py:118
+msgid "Duplicates on Device"
+msgstr "تكرارات على الجهاز"
+
+#: smarteject_plugin.py:138
+msgid ""
+"There are books on the device in %s that are not in the Library.<p>Delete "
+"books not in Library?"
+msgstr "توجد كتب على الجهاز في %s ليست في المكتبة.<p>هل تريد حذف الكتب التي ليست في المكتبة؟"
+
+#: smarteject_plugin.py:140
+msgid ""
+"There are books on the device in %s that are not in the Library.<p>Display "
+"books not in Library?"
+msgstr "توجد كتب على الجهاز في %s ليست في المكتبة.<p>عرض الكتب التي ليست في المكتبة؟"
+
+#: smarteject_plugin.py:141
+msgid "Books on Device not in Library"
+msgstr "كتب على الجهاز ليست في المكتبة"
+
+#: smarteject_plugin.py:158
+msgid ""
+"There are books in the Library that are not on the Device.<p>Send books not "
+"on Device?"
+msgstr "توجد كتب في المكتبة ليست على الجهاز.<p>هل تريد إرسال الكتب التي ليست على الجهاز؟"
+
+#: smarteject_plugin.py:160
+msgid ""
+"There are books in the Library that are not on the Device.<p>Display books "
+"not on Device?"
+msgstr "توجد كتب في المكتبة ليست على الجهاز.<p>عرض الكتب التي ليست على الجهاز؟"
+
+#: smarteject_plugin.py:162
+msgid "Books in Library not on Device"
+msgstr "كتب في المكتبة ليست على الجهاز"
